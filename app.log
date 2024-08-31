@@ -1,0 +1,162 @@
+2024-08-31T17:38:13.354-04:00  INFO 19724 --- [flight-booking] [main] com.example.FlightBookingApplication     : Starting FlightBookingApplication using Java 22.0.2 with PID 19724 (C:\Users\user01\FlightBookingSystem\flight-booking\target\classes started by user01 in C:\Users\user01\FlightBookingSystem\flight-booking)
+2024-08-31T17:38:13.356-04:00  INFO 19724 --- [flight-booking] [main] com.example.FlightBookingApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-08-31T17:38:13.895-04:00  INFO 19724 --- [flight-booking] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-31T17:38:13.953-04:00  INFO 19724 --- [flight-booking] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 3 JPA repository interfaces.
+2024-08-31T17:38:14.459-04:00  INFO 19724 --- [flight-booking] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-31T17:38:14.470-04:00  INFO 19724 --- [flight-booking] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-31T17:38:14.471-04:00  INFO 19724 --- [flight-booking] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-08-31T17:38:14.513-04:00  INFO 19724 --- [flight-booking] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-31T17:38:14.514-04:00  INFO 19724 --- [flight-booking] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1110 ms
+2024-08-31T17:38:14.540-04:00  INFO 19724 --- [flight-booking] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-31T17:38:14.690-04:00  INFO 19724 --- [flight-booking] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-08-31T17:38:14.691-04:00  INFO 19724 --- [flight-booking] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-31T17:38:14.701-04:00  INFO 19724 --- [flight-booking] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-08-31T17:38:14.837-04:00  INFO 19724 --- [flight-booking] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-31T17:38:14.892-04:00  INFO 19724 --- [flight-booking] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-31T17:38:14.929-04:00  INFO 19724 --- [flight-booking] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-31T17:38:15.189-04:00  INFO 19724 --- [flight-booking] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-31T17:38:15.231-04:00  WARN 19724 --- [flight-booking] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-31T17:38:15.825-04:00  INFO 19724 --- [flight-booking] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-31T17:38:15.866-04:00  INFO 19724 --- [flight-booking] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-31T17:38:16.187-04:00  WARN 19724 --- [flight-booking] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-31T17:38:16.275-04:00 DEBUG 19724 --- [flight-booking] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 19 mappings in 'requestMappingHandlerMapping'
+2024-08-31T17:38:16.348-04:00 DEBUG 19724 --- [flight-booking] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-08-31T17:38:16.376-04:00 DEBUG 19724 --- [flight-booking] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-08-31T17:38:16.406-04:00 DEBUG 19724 --- [flight-booking] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-08-31T17:38:16.502-04:00  INFO 19724 --- [flight-booking] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-31T17:38:16.510-04:00  INFO 19724 --- [flight-booking] [main] com.example.FlightBookingApplication     : Started FlightBookingApplication in 3.643 seconds (process running for 3.963)
+2024-08-31T17:38:33.653-04:00  INFO 19724 --- [flight-booking] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-31T17:38:33.653-04:00  INFO 19724 --- [flight-booking] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-31T17:38:33.653-04:00 DEBUG 19724 --- [flight-booking] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-08-31T17:38:33.653-04:00 DEBUG 19724 --- [flight-booking] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-08-31T17:38:33.653-04:00 DEBUG 19724 --- [flight-booking] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-08-31T17:38:33.654-04:00 DEBUG 19724 --- [flight-booking] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@18d09283
+2024-08-31T17:38:33.654-04:00 DEBUG 19724 --- [flight-booking] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@23d07ad3
+2024-08-31T17:38:33.654-04:00 DEBUG 19724 --- [flight-booking] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-08-31T17:38:33.654-04:00  INFO 19724 --- [flight-booking] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-08-31T17:38:33.660-04:00 DEBUG 19724 --- [flight-booking] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/flights", parameters={}
+2024-08-31T17:38:33.667-04:00 DEBUG 19724 --- [flight-booking] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controller.FlightController#createFlight(Flight)
+2024-08-31T17:38:33.732-04:00 DEBUG 19724 --- [flight-booking] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.model.Flight@158ba0db]
+2024-08-31T17:38:33.887-04:00 DEBUG 19724 --- [flight-booking] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-08-31T17:38:33.888-04:00 DEBUG 19724 --- [flight-booking] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.example.model.Flight@158ba0db]
+2024-08-31T17:38:33.901-04:00 DEBUG 19724 --- [flight-booking] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2024-08-31T17:38:43.636-04:00  INFO 19724 --- [flight-booking] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-31T17:38:43.638-04:00  INFO 19724 --- [flight-booking] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-31T17:38:43.640-04:00  INFO 19724 --- [flight-booking] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-31T17:39:08.222-04:00  INFO 14408 --- [flight-booking] [main] com.example.FlightBookingApplication     : Starting FlightBookingApplication using Java 22.0.2 with PID 14408 (C:\Users\user01\FlightBookingSystem\flight-booking\target\classes started by user01 in C:\Users\user01\FlightBookingSystem\flight-booking)
+2024-08-31T17:39:08.224-04:00  INFO 14408 --- [flight-booking] [main] com.example.FlightBookingApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-08-31T17:39:08.773-04:00  INFO 14408 --- [flight-booking] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-31T17:39:08.833-04:00  INFO 14408 --- [flight-booking] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 3 JPA repository interfaces.
+2024-08-31T17:39:09.307-04:00  INFO 14408 --- [flight-booking] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-31T17:39:09.317-04:00  INFO 14408 --- [flight-booking] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-31T17:39:09.318-04:00  INFO 14408 --- [flight-booking] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-08-31T17:39:09.361-04:00  INFO 14408 --- [flight-booking] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-31T17:39:09.362-04:00  INFO 14408 --- [flight-booking] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1096 ms
+2024-08-31T17:39:09.391-04:00  INFO 14408 --- [flight-booking] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-31T17:39:09.554-04:00  INFO 14408 --- [flight-booking] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-08-31T17:39:09.563-04:00  INFO 14408 --- [flight-booking] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-31T17:39:09.573-04:00  INFO 14408 --- [flight-booking] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-08-31T17:39:09.704-04:00  INFO 14408 --- [flight-booking] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-31T17:39:09.762-04:00  INFO 14408 --- [flight-booking] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-31T17:39:09.799-04:00  INFO 14408 --- [flight-booking] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-31T17:39:10.057-04:00  INFO 14408 --- [flight-booking] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-31T17:39:10.098-04:00  WARN 14408 --- [flight-booking] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-31T17:39:10.675-04:00  INFO 14408 --- [flight-booking] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-31T17:39:10.716-04:00  INFO 14408 --- [flight-booking] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-31T17:39:11.046-04:00  WARN 14408 --- [flight-booking] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-31T17:39:11.132-04:00 DEBUG 14408 --- [flight-booking] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 19 mappings in 'requestMappingHandlerMapping'
+2024-08-31T17:39:11.198-04:00 DEBUG 14408 --- [flight-booking] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-08-31T17:39:11.230-04:00 DEBUG 14408 --- [flight-booking] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-08-31T17:39:11.264-04:00 DEBUG 14408 --- [flight-booking] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-08-31T17:39:11.363-04:00  INFO 14408 --- [flight-booking] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-31T17:39:11.370-04:00  INFO 14408 --- [flight-booking] [main] com.example.FlightBookingApplication     : Started FlightBookingApplication in 3.618 seconds (process running for 3.922)
+2024-08-31T17:39:17.552-04:00  INFO 14408 --- [flight-booking] [http-nio-8080-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-31T17:39:17.552-04:00  INFO 14408 --- [flight-booking] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-31T17:39:17.553-04:00 DEBUG 14408 --- [flight-booking] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-08-31T17:39:17.553-04:00 DEBUG 14408 --- [flight-booking] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-08-31T17:39:17.553-04:00 DEBUG 14408 --- [flight-booking] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-08-31T17:39:17.554-04:00 DEBUG 14408 --- [flight-booking] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@22a8c837
+2024-08-31T17:39:17.554-04:00 DEBUG 14408 --- [flight-booking] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@64de9fa4
+2024-08-31T17:39:17.554-04:00 DEBUG 14408 --- [flight-booking] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-08-31T17:39:17.554-04:00  INFO 14408 --- [flight-booking] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-08-31T17:39:17.559-04:00 DEBUG 14408 --- [flight-booking] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/api/flights", parameters={}
+2024-08-31T17:39:17.568-04:00 DEBUG 14408 --- [flight-booking] [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controller.FlightController#createFlight(Flight)
+2024-08-31T17:39:17.629-04:00 DEBUG 14408 --- [flight-booking] [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.model.Flight@3cf64f8]
+2024-08-31T17:39:17.788-04:00 DEBUG 14408 --- [flight-booking] [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-08-31T17:39:17.789-04:00 DEBUG 14408 --- [flight-booking] [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.example.model.Flight@3cf64f8]
+2024-08-31T17:39:17.803-04:00 DEBUG 14408 --- [flight-booking] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2024-08-31T17:39:20.980-04:00 DEBUG 14408 --- [flight-booking] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/passengers", parameters={}
+2024-08-31T17:39:20.981-04:00 DEBUG 14408 --- [flight-booking] [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controller.PassengerController#createPassenger(Passenger)
+2024-08-31T17:39:20.989-04:00 DEBUG 14408 --- [flight-booking] [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.model.Passenger@4c99e30b]
+2024-08-31T17:39:21.005-04:00 DEBUG 14408 --- [flight-booking] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-08-31T17:39:21.008-04:00 DEBUG 14408 --- [flight-booking] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.example.model.Passenger@4c99e30b]
+2024-08-31T17:39:21.025-04:00 DEBUG 14408 --- [flight-booking] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2024-08-31T17:39:25.111-04:00 DEBUG 14408 --- [flight-booking] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/api/bookings", parameters={}
+2024-08-31T17:39:25.112-04:00 DEBUG 14408 --- [flight-booking] [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controller.BookingController#createBooking(Booking)
+2024-08-31T17:39:25.129-04:00 DEBUG 14408 --- [flight-booking] [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.model.Booking@55c82a48]
+2024-08-31T17:39:25.171-04:00 ERROR 14408 --- [flight-booking] [http-nio-8080-exec-6] c.example.controller.BookingController   : Error creating booking: Passenger not found
+
+java.lang.IllegalArgumentException: Passenger not found
+	at com.example.service.BookingServiceImpl.saveBooking(BookingServiceImpl.java:47) ~[classes/:na]
+	at com.example.controller.BookingController.createBooking(BookingController.java:42) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.28.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.12.jar:6.1.12]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.28.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
+	at java.base/java.lang.Thread.run(Thread.java:1570) ~[na:na]
+
+2024-08-31T17:39:25.190-04:00 DEBUG 14408 --- [flight-booking] [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-08-31T17:39:25.191-04:00 DEBUG 14408 --- [flight-booking] [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2024-08-31T17:39:25.191-04:00 DEBUG 14408 --- [flight-booking] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 417 EXPECTATION_FAILED
+2024-08-31T17:39:32.624-04:00 DEBUG 14408 --- [flight-booking] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/api/bookings", parameters={}
+2024-08-31T17:39:32.625-04:00 DEBUG 14408 --- [flight-booking] [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.controller.BookingController#createBooking(Booking)
+2024-08-31T17:39:32.627-04:00 DEBUG 14408 --- [flight-booking] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.example.model.Booking@6ee4d89f]
+2024-08-31T17:39:32.638-04:00 DEBUG 14408 --- [flight-booking] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-08-31T17:39:32.639-04:00 DEBUG 14408 --- [flight-booking] [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.example.model.Booking@6ee4d89f]
+2024-08-31T17:39:32.643-04:00 DEBUG 14408 --- [flight-booking] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2024-08-31T17:42:33.636-04:00  INFO 14408 --- [flight-booking] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-31T17:42:33.638-04:00  INFO 14408 --- [flight-booking] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-31T17:42:33.642-04:00  INFO 14408 --- [flight-booking] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

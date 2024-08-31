@@ -19,8 +19,9 @@ public class FlightServiceImpl implements FlightService {
     }
 
     @Override
-    public Flight getFlightById() {
-        return null;
+    public Flight getFlightById(Long id)
+    {
+        return flightRepository.findById(id).orElse(null);
     }
 
     @Override
@@ -29,12 +30,17 @@ public class FlightServiceImpl implements FlightService {
     }
 
     @Override
-    public void deletedFlight(Long id) {
-
+    public void deletedFlightById(Long id) {
+        flightRepository.deleteById(id);
     }
 
     @Override
     public Flight updateFlight(Long id, Flight flight) {
+        if(flightRepository.existsById(id))
+        {
+            flight.setId(id);
+            return flightRepository.save(flight);
+        }
         return null;
     }
 

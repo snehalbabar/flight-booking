@@ -24,9 +24,12 @@ public class Booking {
 
     private double totalAmount;
 
-    private long flightId;
 
-    private long passengerId;
+    @JoinColumn(name = "flight_id")
+    private Long flightId;;
+
+    @JoinColumn(name ="passenger_id")
+    private Long passengerId;
 
     @Enumerated(EnumType.STRING)
     private FlightStatus  status;

@@ -8,11 +8,11 @@ public interface FlightService {
 
     List<Flight> getAllFlight();
 
-    Flight getFlightById();
+    Flight getFlightById(Long id);
 
     Flight saveFlight(Flight flight);
 
-    void deletedFlight(Long id);
+    void deletedFlightById(Long id);
 
     Flight updateFlight(Long id, Flight flight);
 
