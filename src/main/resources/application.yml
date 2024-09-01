@@ -27,30 +27,9 @@ spring:
 
 logging:
   level:
-    root: INFO
-    org.springframework.web: DEBUG
-    com.example.flightbooking.controller: DEBUG
-  file:
-    name: app.log
+    org:
+      springframework:
+        security: DEBUG
 
-  pattern:
-    console:
-      # Pattern for console output
-      # Example: %d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n
-      console: "%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n"
-    file:
-      # Pattern for file output
-      # Example: %d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n
-      file: "%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n"
 
-# Other application-specific properties
-# Define any other custom properties here
-app:
-  custom:
-    property: value
 
-springdoc:
-  api-docs:
-    path: /api-docs
-  swagger-ui:
-    path: /swagger-ui.html

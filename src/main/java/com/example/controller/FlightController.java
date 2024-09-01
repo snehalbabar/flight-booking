@@ -23,6 +23,7 @@ public class FlightController {
     private FlightService flightService;
 
     @GetMapping("/all-flights")
+    @PreAuthorize("hasRole('ADMIN') or hasRole('USER')")
     public ResponseEntity<List<Flight>> getAllFlightDetails() {
         List<Flight> flights = flightService.getAllFlight();
         return new ResponseEntity<>(flights, HttpStatus.OK);
@@ -30,8 +31,8 @@ public class FlightController {
 
 
 
-    @PostMapping
-    @PreAuthorize("hasRole('ROLE_USER')")
+    @PostMapping("/create")
+    @PreAuthorize("hasRole('ADMIN')")
     public ResponseEntity<Flight> createFlight(@RequestBody Flight flight) {
 
         try {
@@ -53,6 +54,7 @@ public class FlightController {
     }
 
     @GetMapping("/{id}")
+    @PreAuthorize("hasRole('ADMIN') or hasRole('USER')")
     public ResponseEntity<Flight> getFilghtdetailsById(@PathVariable Long id)
     {
         Flight flight = flightService.getFlightById(id);
@@ -67,6 +69,7 @@ public class FlightController {
     }
 
     @DeleteMapping("/{id}")
+    @PreAuthorize("hasRole('ADMIN')")
     public ResponseEntity<Void> deleteFlightById(@PathVariable Long id)
     {
          if(flightService.getFlightById(id) != null)
@@ -82,6 +85,7 @@ public class FlightController {
     }
 
     @PutMapping("/{id}")
+    @PreAuthorize("hasRole('ADMIN')")
     public ResponseEntity<Flight> updateFlightDetails(@PathVariable Long id, @RequestBody Flight flight)
     {
         Flight upadatedFlight = flightService.updateFlight(id,flight);

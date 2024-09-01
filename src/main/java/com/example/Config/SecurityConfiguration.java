@@ -2,6 +2,7 @@ package com.example.Config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.core.userdetails.User;
@@ -11,30 +12,37 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
 
-import static org.springframework.security.config.Customizer.withDefaults;
-
 @Configuration
 @EnableWebSecurity
+@EnableMethodSecurity
 public class SecurityConfiguration    {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
+                .csrf(csrf -> csrf.disable())  // Disable CSRF protection
                 .authorizeRequests(authorizeRequests ->
                         authorizeRequests
-                                .requestMatchers("/api/bookings/**").authenticated() // Secure booking endpoints// Secure flight endpoints
-                                .anyRequest().permitAll() // Allow other requests without authentication
+                                .requestMatchers("/api/flights/**").authenticated()
+                               // .requestMatchers("/api/bookings/**").hasRole("USER")  // User access for bookings
+                                .anyRequest().authenticated()
                 )
-                .httpBasic(); // Enable HTTP Basic Authentication
+                .httpBasic();
         return http.build();
     }
+
     @Bean
     public UserDetailsService userDetailsService() {
-        InMemoryUserDetailsManager manager = new InMemoryUserDetailsManager();
-        manager.createUser(User.withUsername("user")
-                .password(passwordEncoder().encode("password"))
-                .roles("USER")
-                .build());
-        return manager;
+        // Create an in-memory user with username 'user' and password 'password'
+        return new InMemoryUserDetailsManager(
+                User.withUsername("admin")
+                        .password(passwordEncoder().encode("pass"))
+                        .roles("ADMIN")
+                        .build(),
+                User.withUsername("user")
+                        .password(passwordEncoder().encode("pass"))
+                        .roles("USER")
+                        .build()
+        );
     }
 
     @Bean
