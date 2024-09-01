@@ -1,5 +1,6 @@
 package com.example.service;
 
+import com.example.exception.PassengerNotFoundException;
 import com.example.model.Passenger;
 import com.example.repository.PassengerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +20,9 @@ public class PassengerServiceImpl implements PassengerService{
 
     @Override
     public Passenger getPassengerById(Long id) {
-        return passengerRepository.findById(id).orElse(null);
+        return passengerRepository.findById(id)
+                .orElseThrow(()->
+                        new PassengerNotFoundException("No Passenger with id"+id+ " present"));
     }
 
     @Override

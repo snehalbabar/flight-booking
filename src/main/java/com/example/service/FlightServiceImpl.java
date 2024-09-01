@@ -1,5 +1,6 @@
 package com.example.service;
 
+import com.example.exception.FlightNotFoundException;
 import com.example.model.Flight;
 import com.example.repository.FlightRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +22,9 @@ public class FlightServiceImpl implements FlightService {
     @Override
     public Flight getFlightById(Long id)
     {
-        return flightRepository.findById(id).orElse(null);
+        return flightRepository.findById(id)
+                .orElseThrow(()->
+                        new FlightNotFoundException("flight with id" + id + " not found"));
     }
 
     @Override

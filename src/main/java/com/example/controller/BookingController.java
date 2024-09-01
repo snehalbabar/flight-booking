@@ -2,22 +2,30 @@ package com.example.controller;
 
 import com.example.model.Booking;
 import com.example.service.BookingService;
+import com.example.service.FlightService;
+import com.example.service.PassengerService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
 @RequestMapping("/api/bookings")
+@Validated
 public class BookingController {
 
     private static final Logger logger = LoggerFactory.getLogger(BookingController.class);
     @Autowired
     private BookingService bookingService;
+    @Autowired
+    private FlightService flightService;
+    @Autowired
+    private PassengerService passengerService;
 
     @GetMapping("/list")
     public ResponseEntity<List<Booking>> getAllBookings() {
@@ -42,11 +50,11 @@ public class BookingController {
             Booking createdBooking = bookingService.saveBooking(booking);
             return new ResponseEntity<>(createdBooking, HttpStatus.CREATED);
         } catch (IllegalArgumentException e) {
-            logger.error("Error creating booking: {}", e.getMessage(), e);
-            return new ResponseEntity<>(HttpStatus.EXPECTATION_FAILED);
+            logger.error("Error creating booking with flightId {} and passengerId {}: {}", booking.getFlightId(), booking.getPassengerId(), e.getMessage(), e);
+            throw e;
         } catch (Exception e) {
-            logger.error("Unexpected error creating booking: {}", e.getMessage(), e);
-            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+            logger.error("Unexpected error creating booking with flightId {} and passengerId {}: {}", booking.getFlightId(), booking.getPassengerId(), e.getMessage(), e);
+            throw e;
         }
     }
 
@@ -58,7 +66,7 @@ public class BookingController {
                 return new ResponseEntity<>(updatedBooking, HttpStatus.OK);
             } else {
                 logger.error("Booking with ID {} not found for update", id);
-                return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+                return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
             }
         } catch (IllegalArgumentException e) {
             logger.error("Error updating booking: {}", e.getMessage(), e);
